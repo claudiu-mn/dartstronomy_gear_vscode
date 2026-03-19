@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "pubspec_lite.g.dart: start scribe",
+            "detail": "Start watching 'pubspec.yaml' and generate a Dart version",
+            "type": "process",
+            "icon": {
+                "id": "gift"
+            },
+            "isBackground": true,
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            // Added to silence VSCode warning
+            // Set up the commands in "osx", "windows" and "linux" properties
+            "command": "",
+            //
+            "osx": {
+                "command": "meta/scripts/macos/pubspec_lite/watch_pubspec.zsh",
+            },
+            //
+            "group": "none",
+            "presentation": {
+                "reveal": "silent",
+                "panel": "dedicated",
+                "clear": true
+            },
+            "runOptions": {
+                "runOn": "folderOpen",
+                "instanceLimit": 1,
+                "instancePolicy": "terminateOldest"
+            },
+            "problemMatcher": []
+        },
+    ]
+}

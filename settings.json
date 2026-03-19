@@ -1,0 +1,14 @@
+{
+  "editor.wordWrapColumn": 80,
+  "editor.rulers": [
+    80
+  ],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
+  "files.exclude": {
+    "**/.git": false
+  },
+  "markdown.validate.enabled": true
+}
